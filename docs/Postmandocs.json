@@ -1,0 +1,1810 @@
+{
+	"info": {
+		"_postman_id": "58a5edf3-74ed-4d44-b345-e24a4e719b4b",
+		"name": "College Appointment System API",
+		"description": "API for managing college appointments between professors and students.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32171"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register a new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Gideon Amowogbaje\",\n  \"email\": \"amowogbajegideon@gmail.com\",\n  \"password\": \"amowogba123\",\n  \"role\": \"professor\",\n  \"department\": \"Physics\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/users/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register as student A1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Michael Sunday\",\n  \"email\": \"michaelsunday@gmail.com\",\n  \"password\": \"michael123\",\n  \"role\": \"student\",\n  \"department\": \"Physics\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "191"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bf-IGghZC8ckVQOXF64H9BVJSPPgdc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 10:57:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Michael Sunday\",\n    \"email\": \"michaelsunday@gmail.com\",\n    \"password\": \"$2a$10$FLQhQeRubIUjYx9VM4tL5eptryLnDeo2dXQk5Px/c3Pf6E4pgqS5q\",\n    \"role\": \"student\",\n    \"_id\": \"675d64a15663bf10512c0e72\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Register as student A2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Goodness Wura\",\n  \"email\": \"goodnesswura@gmail.com\",\n  \"password\": \"goodness123\",\n  \"role\": \"student\",\n  \"department\": \"Physics\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bd-uK5Yac0iexZbHX9jWfX09/qgwpA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:22:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Goodness Wura\",\n    \"email\": \"goodnesswura@gmail.com\",\n    \"password\": \"$2a$10$1OPi7mjTrlcgkE3LnztFXuB49yOM4VROPZS76BjBVdAY4hp8Ko6fe\",\n    \"role\": \"student\",\n    \"_id\": \"675d787ea76e67ba67b0f4dd\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Register as professor P1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Gideon Amowogbaje\",\n  \"email\": \"amowogbajegideon@gmail.com\",\n  \"password\": \"amowogba123\",\n  \"role\": \"professor\",\n  \"department\": \"Physics\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c7-NUj6Recp2Ih6fKWvEDY/edjtNVw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 10:58:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Gideon Amowogbaje\",\n    \"email\": \"amowogbajegideon@gmail.com\",\n    \"password\": \"$2a$10$bdbrHEsbPBJsM3oOkRtu5.L98M/eG.9AkL356kfJrJaXDNW1Iw5xu\",\n    \"role\": \"professor\",\n    \"_id\": \"675d64ea5663bf10512c0e74\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Register as Professor P2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Catherine Amowogbaje\",\n  \"email\": \"amowogbajecatherine@gmail.com\",\n  \"password\": \"amowogba123\",\n  \"role\": \"professor\",\n  \"department\": \"Physics\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "205"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd-fUIIgUv9ZieI4WVelC2R6Oa+dCo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:23:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Catherine Amowogbaje\",\n    \"email\": \"amowogbajecatherine@gmail.com\",\n    \"password\": \"$2a$10$JBbrhMflYoBh75HRgXwmk.Zg.mQTKOc0ucKjH7Ii0NGzREnSvuEJS\",\n    \"role\": \"professor\",\n    \"_id\": \"675d78d4a76e67ba67b0f4e1\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Log in a user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"amowogbajecatherine@gmail.com\",\n  \"password\": \"amowogba123\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/users/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Log in as student A1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"michaelsunday@gmail.com\",\n    \"password\": \"michael123\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "404"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"194-AwTgrSqjDZidszhNAZnxkBYo/zs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 11:02:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWQ2NGExNTY2M2JmMTA1MTJjMGU3MiIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzM0MTc0MTc2LCJleHAiOjE3MzQxNzc3NzZ9.SGeYdIWxW6o9PptBh50udJ81N8wMjre5WBHaAwv2tjM\",\n    \"user\": {\n        \"_id\": \"675d64a15663bf10512c0e72\",\n        \"name\": \"Michael Sunday\",\n        \"email\": \"michaelsunday@gmail.com\",\n        \"password\": \"$2a$10$FLQhQeRubIUjYx9VM4tL5eptryLnDeo2dXQk5Px/c3Pf6E4pgqS5q\",\n        \"role\": \"student\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Log in as professor P1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"amowogbajegideon@gmail.com\",\n  \"password\": \"amowogba123\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "415"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19f-OycbKTne3cWAudFdtX0D1Slnex0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 11:03:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWQ2NGVhNTY2M2JmMTA1MTJjMGU3NCIsInJvbGUiOiJwcm9mZXNzb3IiLCJpYXQiOjE3MzQxNzQyMzYsImV4cCI6MTczNDE3NzgzNn0.4j42w2SIfSzQhrH6QqUSV2Bi8DYvMUZfFtVS0e3PcmI\",\n    \"user\": {\n        \"_id\": \"675d64ea5663bf10512c0e74\",\n        \"name\": \"Gideon Amowogbaje\",\n        \"email\": \"amowogbajegideon@gmail.com\",\n        \"password\": \"$2a$10$bdbrHEsbPBJsM3oOkRtu5.L98M/eG.9AkL356kfJrJaXDNW1Iw5xu\",\n        \"role\": \"professor\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Login as student A2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"goodnesswura@gmail.com\",\n  \"password\": \"goodness123\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "402"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"192-PJm/ZQY0zgOTPTcwV/v3Z+DOryY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:25:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWQ3ODdlYTc2ZTY3YmE2N2IwZjRkZCIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzM0MTc5MTQxLCJleHAiOjE3MzQxODI3NDF9.TWZQwnqd3l4_DP1RQP0ptOl0l2jqd0Un5okNGvB0Axs\",\n    \"user\": {\n        \"_id\": \"675d787ea76e67ba67b0f4dd\",\n        \"name\": \"Goodness Wura\",\n        \"email\": \"goodnesswura@gmail.com\",\n        \"password\": \"$2a$10$1OPi7mjTrlcgkE3LnztFXuB49yOM4VROPZS76BjBVdAY4hp8Ko6fe\",\n        \"role\": \"student\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Log in as Professor P2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"amowogbajecatherine@gmail.com\",\n  \"password\": \"amowogba123\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "421"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a5-Y/abp47x55WuD78csGDUAvaVl5w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:27:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NWQ3OGQ0YTc2ZTY3YmE2N2IwZjRlMSIsInJvbGUiOiJwcm9mZXNzb3IiLCJpYXQiOjE3MzQxNzkyMzksImV4cCI6MTczNDE4MjgzOX0.gRoDXGxP4Y3Znu1iul5MAbRqKHLC1IaLzee42Z7WtEs\",\n    \"user\": {\n        \"_id\": \"675d78d4a76e67ba67b0f4e1\",\n        \"name\": \"Catherine Amowogbaje\",\n        \"email\": \"amowogbajecatherine@gmail.com\",\n        \"password\": \"$2a$10$JBbrhMflYoBh75HRgXwmk.Zg.mQTKOc0ucKjH7Ii0NGzREnSvuEJS\",\n        \"role\": \"professor\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "Create a new appointment time slot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"timeSlot\": \"2024-12-25T14:05:09.459Z\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Time slot can't be in the past",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"1999-09-24T11:55:09.459Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "141"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8d-pB0RibxNLUuKFe7w4hUwJPQiceA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:07:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"value\": \"1999-09-24T11:55:09.459Z\",\n            \"msg\": \"Time slot cannot be in the past.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Only professors can create time slot",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"1999-09-24T11:55:09.459Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-kpt4g9x2/XICqllpFBUlz3SoASw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:10:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Access denied. Only professors can perform this action.\"\n}"
+						},
+						{
+							"name": "unauthorized access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"1999-09-24T11:55:09.459Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-Srzaw01J1MSkTStpZumRIHJGaRs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:10:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Not authorized, token failed\"\n}"
+						},
+						{
+							"name": "time slot field is required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "226"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e2-OmYsLRNBz/gnW/BeKtXytlIfr/k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:12:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"msg\": \"Time slot is required.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"msg\": \"Invalid date format. Please use the format YYYY-MM-DDTHH:mm:ss.sssZ.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "time slot field is required -2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "248"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f8-TDC7jvHSbYJTjX0gi+KIezlZ8+U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:12:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"value\": \"\",\n            \"msg\": \"Time slot is required.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"value\": \"\",\n            \"msg\": \"Invalid date format. Please use the format YYYY-MM-DDTHH:mm:ss.sssZ.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "invalid date time",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"1999-09-24 12;56:7\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ab-QzMsOGjV98hi/25kCAvsLikGCyM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:13:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"value\": \"1999-09-24 12;56:7\",\n            \"msg\": \"Invalid date format. Please use the format YYYY-MM-DDTHH:mm:ss.sssZ.\",\n            \"path\": \"timeSlot\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "appointment successfully created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"2024-12-25T11:55:09.459Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "140"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8c-gtqj1EJ1KII1nSumY77c72ZSnPw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:17:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"professor\": \"675d64ea5663bf10512c0e74\",\n    \"timeSlot\": \"2024-12-25T11:55:09.459Z\",\n    \"status\": \"available\",\n    \"_id\": \"675d774ca76e67ba67b0f4cd\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "time slot already existed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"timeSlot\": \"2024-12-25T11:55:09.459Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-mVEcdW0ujI0fyv5IVWaOPuS/Qgc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:18:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Time slot already exists for this professor.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get available time slots for a professor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/available/:professorId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"available",
+								":professorId"
+							],
+							"variable": [
+								{
+									"key": "professorId",
+									"value": "675d900ea3d35b9df72793db",
+									"description": "(Required) ID of the professor"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Available time slots retrieved successfully",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/available/:professorId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"available",
+										":professorId"
+									],
+									"variable": [
+										{
+											"key": "professorId",
+											"value": "675d64ea5663bf10512c0e74",
+											"description": "(Required) ID of the professor"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-1ssKOQlndyZyAaVDutzAwV4uhV4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:32:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"675d7804a76e67ba67b0f4d3\",\n        \"professor\": \"675d64ea5663bf10512c0e74\",\n        \"timeSlot\": \"2024-12-25T11:55:09.459Z\",\n        \"status\": \"available\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675d7816a76e67ba67b0f4d9\",\n        \"professor\": \"675d64ea5663bf10512c0e74\",\n        \"timeSlot\": \"2024-12-26T11:55:09.459Z\",\n        \"status\": \"available\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Book an appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/book/:appointmentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"book",
+								":appointmentId"
+							],
+							"variable": [
+								{
+									"key": "appointmentId",
+									"value": "675d7804a76e67ba67b0f4d3",
+									"description": "(Required) ID of the appointment to book"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Appointment succesfully booked",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/book/:appointmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"book",
+										":appointmentId"
+									],
+									"variable": [
+										{
+											"key": "appointmentId",
+											"value": "675d7816a76e67ba67b0f4d9",
+											"description": "(Required) ID of the appointment to book"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "174"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ae-XlIudR+rFC44Jhwz5nO8vO2wbN8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:34:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"675d7816a76e67ba67b0f4d9\",\n    \"professor\": \"675d64ea5663bf10512c0e74\",\n    \"timeSlot\": \"2024-12-26T11:55:09.459Z\",\n    \"status\": \"booked\",\n    \"__v\": 0,\n    \"student\": \"675d64a15663bf10512c0e72\"\n}"
+						},
+						{
+							"name": "Appointment already booked",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/book/:appointmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"book",
+										":appointmentId"
+									],
+									"variable": [
+										{
+											"key": "appointmentId",
+											"value": "675d7816a76e67ba67b0f4d9",
+											"description": "(Required) ID of the appointment to book"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-YR5C8A3gwErEOShPUtp/UxsyXsw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:35:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Appointment not available\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Cancel an appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/cancel/:appointmentId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"cancel",
+								":appointmentId"
+							],
+							"variable": [
+								{
+									"key": "appointmentId",
+									"value": "675d7804a76e67ba67b0f4d3",
+									"description": "(Required) ID of the appointment to cancel"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "appoitment canceled",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/cancel/:appointmentId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"cancel",
+										":appointmentId"
+									],
+									"variable": [
+										{
+											"key": "appointmentId",
+											"value": "675d7804a76e67ba67b0f4d3",
+											"description": "(Required) ID of the appointment to cancel"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9b-pB48ksbjoMez2STKhS0giZDRrH0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:38:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"675d7804a76e67ba67b0f4d3\",\n    \"professor\": \"675d64ea5663bf10512c0e74\",\n    \"timeSlot\": \"2024-12-25T11:55:09.459Z\",\n    \"status\": \"available\",\n    \"__v\": 0,\n    \"student\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Get appointments for a student",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/student",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"student"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list of student appointments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/appointments/student",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"appointments",
+										"student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-qZJH5TTvjkLveOcDrVUUAjx2mPM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 12:45:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"675d7804a76e67ba67b0f4d3\",\n        \"professor\": \"675d64ea5663bf10512c0e74\",\n        \"timeSlot\": \"2024-12-25T11:55:09.459Z\",\n        \"status\": \"booked\",\n        \"__v\": 0,\n        \"student\": \"675d787ea76e67ba67b0f4dd\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/health",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://virtserver.swaggerhub.com/AMOWOGBAJEGIDEON/CollegeApointmentAPI/1.0.0"
+		}
+	]
+}
