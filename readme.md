@@ -20,7 +20,7 @@ A simple appointment scheduling system where students can book appointments with
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/amowogbaje/appointment-system.git
+   git clone https://github.com/amowogbaje/college-appointment-system.git
    cd appointment-system
    ```
 
